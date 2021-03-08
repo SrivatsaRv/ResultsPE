@@ -63,8 +63,7 @@
 26.  Display the number of files inside a directory ![26- No of Files in Directory](https://user-images.githubusercontent.com/43114746/110295842-9a85df80-8017-11eb-80a9-3a28c6a81c6a.png)
 
 
-27.  Display the number of lines in a file ![27- No of Lines in a File](https://user-images.githubusercontent.com/43114746/110295592-4c70dc00-8017-11eb-91f0-78![Uploading 26- No of Files in Directory.png…]()
-e89ce982e3.png)
+27.  Display the number of lines in a file ![27- No of Lines in a File](https://user-images.githubusercontent.com/43114746/110304027-19334a80-8021-11eb-8be2-d06a6ce04bc9.png)
 
 
 
