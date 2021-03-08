@@ -1,9 +1,8 @@
 # ResultsPE Observations
 
-1.  Find the processes running on a linux machine
-![1-All Processes](https://user-images.githubusercontent.com/43114746/110269603-1f5a0480-7fea-11eb-8366-dac56cae4723.png) 
+1.  Find the processes running on a linux machine ![1-All Processes](https://user-images.githubusercontent.com/43114746/110269603-1f5a0480-7fea-11eb-8366-dac56cae4723.png) 
 
-2. Users Currently Logged In ![2-Users Currently Logged In](https://user-images.githubusercontent.com/43114746/110269620-27b23f80-7fea-11eb-8d28-2b36f64db888.png)
+2.  Users Currently Logged In ![2-Users Currently Logged In](https://user-images.githubusercontent.com/43114746/110269620-27b23f80-7fea-11eb-8d28-2b36f64db888.png)
 
 3.  Find Uptime ![3-Find Uptime](https://user-images.githubusercontent.com/43114746/110269624-284ad600-7fea-11eb-8202-b9feb6047544.png)
 
