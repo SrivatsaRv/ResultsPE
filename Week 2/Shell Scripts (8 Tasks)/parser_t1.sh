@@ -1,14 +1,6 @@
 
 NGINXLOG="/Users/srivatsa.intern/Desktop/access.log" # NGINX LOGFILE
 
-get_date(){
-grep '12/Feb/2021'
-}
-
-top_ele(){
-head -1
-}
-
 highest_requested_host(){
 awk '{print $NF}'|sort | uniq -c | sort -r
 }
@@ -21,6 +13,16 @@ highest_requested_path()
 {
 awk '{print $5}'|sort | uniq -c | sort -r
 }
+
+get_date(){
+grep '12/Feb/2021'
+}
+
+top_ele(){
+head -1
+}
+
+
 
 
 set_highest_requested_host(){
