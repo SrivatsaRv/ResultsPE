@@ -1,63 +1,57 @@
 
-LOGFILE="/Users/srivatsa.intern/Desktop/access.log" # NGINX LOGFILE
-LOGFILE_GZ="/Users/srivatsa.intern/Desktop/access.log" #LOGFILE
-RESPONSE_CODE="200"
+NGINXLOG="/Users/srivatsa.intern/Desktop/access.log" # NGINX LOGFILE
 
-#functions
-
-filter_date(){
+get_date(){
 grep '12/Feb/2021'
 }
 
-request_head(){
+top_ele(){
 head -1
 }
 
-high_req_host(){
+highest_requested_host(){
 awk '{print $NF}'|sort | uniq -c | sort -r
 }
 
-high_req_upstream_ip(){
-awk '{print $9}'|sort | uniq qq-c | sort -r
+highest_requested_upstream_ip(){
+awk '{print $9}'|sort | uniq -c | sort -r
 }
 
-high_req_path()
+highest_requested_path()
 {
 awk '{print $5}'|sort | uniq -c | sort -r
 }
 
-#actions
-get_high_req_host(){
+
+set_highest_requested_host(){
 echo ""
-echo "1.Summary for the day/week/month"
-echo "==================================="
+echo "1.Summary stats for the day-week-month (NGINX LOG FILE)"
+echo "========================================================="
 echo ""
-echo "highest requested host:"
-cat $LOGFILE \
-| high_req_host \
-| request_head
-echo ""
+echo "---------------------------------------"
+echo "1.1 - highest requested host:"
+echo "---------------------------------------"
+cat $NGINXLOG | highest_requested_host | top_ele
+echo " "
 }
 
-get_high_upstream(){
-echo "highest requested upstream ip:"
-cat $LOGFILE \
-| high_req_upstream_ip \
-| request_head
-echo ""
-}
-
-
-get_high_req_path(){
-echo "highest requsted path:"
-cat $LOGFILE \
-| high_req_path \
-| request_head
-echo ""
+set_highest_requested_upstream_ip(){
+echo "-------------------------------------"
+echo " 1.2 - highest requested upstream ip:"
+echo "-------------------------------------"
+cat $NGINXLOG   | highest_requested_upstream_ip  | top_ele
+echo " "
 }
 
 
-#executing
-get_high_req_host
-get_high_upstream
-get_high_req_path
+set_highest_requested_path(){
+echo "---------------------------------------"
+echo " 1.3 - highest requsted path:"
+echo "---------------------------------------"
+cat $NGINXLOG  | highest_requested_path | top_ele
+echo " "
+}
+
+set_highest_requested_host
+set_highest_requested_upstream_ip
+set_highest_requested_path
