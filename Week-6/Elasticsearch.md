@@ -2,17 +2,17 @@
 
 ## Here are the tasks assigned for Elasticsearch 
 
-- [x] 1-Install and configure 1 node elasticsearch cluster version 7.8.0
-- [ ] 2-The ES cluster should be on TLS and have a username/password
-- [x] 3-Data should be persisted on disk
-- [x] 4-Check the various jvm options and come up with the appropriate heap and GC settings for your cluster (https://github.com/elastic/elasticsearch/blob/master/distribution/src/config/jvm.options)
-- [x] 5-Add 2 more nodes to the cluster without restarting elasticsearch service on first one
-- [x] 6-Create 3 indices (books details, author details, publishing company details) on the cluster, set the number of shards to be 3 for each index
-- [x] 7-Insert at least 10 documents per index.
-- [ ] 8-The publishing company documents should be parent for the book details documents.
-- [ ] 9-Take backup of all the indices
-- [ ] 10-Delete all the indices
-- [ ] 11-Restore them
+✅ 1-Install and configure 1 node elasticsearch cluster version 7.8.0.  
+❌ 2-The ES cluster should be on TLS and have a username/password.  
+✅ 3-Data should be persisted on disk.  
+✅ 4-Check the various jvm options and come up with the appropriate heap and GC settings for your cluster.    
+✅ 5-Add 2 more nodes to the cluster without restarting elasticsearch service on first one.  
+✅ 6-Create 3 indices (books details, author details, publishing company details), set the number of shards as 3/index.   
+✅ 7-Insert at least 10 documents per index.  
+❌ 8-The publishing company documents should be parent for the book details documents.  
+❌ 9-Take backup of all the indices.  
+❌ 10-Delete all the indices.  
+❌ 11-Restore them.  
 
 
 
