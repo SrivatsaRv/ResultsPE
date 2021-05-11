@@ -3,7 +3,7 @@
 ## Here are the tasks assigned for Elasticsearch 
 
 ✅1-Install and configure 1 node Aerospike cluster version 4.8.0.6.  
-❌2-The AS cluster should have a username/password.  
+✅2-The AS cluster should have a username/password.  
 ✅3-Data should be persisted on disk.  
 ✅4-Add 2 more nodes to the cluster without restarting AS service on first one.  
 ✅5-Create a namespace Orders.  
