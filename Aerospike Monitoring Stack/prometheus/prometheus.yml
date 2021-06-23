@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 1m
+  scrape_timeout: 10s
+
+scrape_configs:
+  - job_name: 'tls-enabled-cluster'
+    static_configs:
+      - targets: ['stg-aerovatsa001.phonepe.nb6:9145','stg-aerovatsa002.phonepe.nb6:9145','stg-aerovatsa003.phonepe.nb6:9145']
