@@ -1,0 +1,18 @@
+# config file version
+apiVersion: 1
+
+# list of datasources that should be deleted from the database
+# deleteDatasources:
+#   - name: Aerospike Prometheus
+#     orgId: 1
+#   - name: Aerospike Prometheus Alertmanager
+#     orgId: 1
+
+datasources:
+  - name: "Prometheus"
+    type: prometheus
+    access: proxy
+    # orgId: 1
+    url: http://stg-rmqsrivatsa001.phonepe.nb6:9090/
+    editable: true
+    isDefault: false
